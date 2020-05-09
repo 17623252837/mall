@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrh.mall.mapper.UmsOssMapper">
+  <resultMap id="BaseResultMap" type="com.hrh.mall.domain.UmsOss">
+    <!--@mbg.generated generated on Fri May 08 15:51:55 CST 2020.-->
+    <!--@Table ums_oss-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="endpoint" jdbcType="VARCHAR" property="endpoint" />
+    <result column="access_key_id" jdbcType="VARCHAR" property="accessKeyId" />
+    <result column="access_key_secret" jdbcType="VARCHAR" property="accessKeySecret" />
+    <result column="bucket_name" jdbcType="VARCHAR" property="bucketName" />
+    <result column="oss_state" jdbcType="INTEGER" property="ossState" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Fri May 08 15:51:55 CST 2020.-->
+    id, endpoint, access_key_id, access_key_secret, bucket_name, oss_state
+  </sql>
+</mapper>

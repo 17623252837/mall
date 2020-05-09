@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  mall-monomer:
+    restart: always
+    image: 192.168.88.130:5000/mall-admin
+    container_name: mall-admin-1.0.0-SNAPSHOT
+    ports:
+      - 9999:8888
+    networks:
+      - cloud
+
+networks:
+  cloud:
+    external:
+      name: spring_cloud

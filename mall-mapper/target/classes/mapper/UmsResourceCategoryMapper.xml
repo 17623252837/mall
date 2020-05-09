@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hrh.mall.mapper.UmsResourceCategoryMapper">
+  <resultMap id="BaseResultMap" type="com.hrh.mall.domain.UmsResourceCategory">
+    <!--@mbg.generated generated on Fri Apr 24 11:10:55 CST 2020.-->
+    <!--@Table ums_resource_category-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Fri Apr 24 11:10:55 CST 2020.-->
+    id, create_time, `name`, sort
+  </sql>
+</mapper>
