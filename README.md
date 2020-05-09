@@ -1,6 +1,4 @@
 # mall
-线上地址：http://119.23.105.18:1111
-
 
 前端项目： https://github.com/17623252837/mall-web
 ## RBAC 权限控制模型
