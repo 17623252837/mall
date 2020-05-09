@@ -1,5 +1,8 @@
 # mall
+线上地址：http://119.23.105.18:1111
 
+
+前端项目： https://github.com/17623252837/mall-web
 ## RBAC 权限控制模型
 |工程名/项目名|类型|服务端|客户端|端口|描述|
 |-------|-------|-------|-------|-------|-------|
@@ -101,5 +104,13 @@ COPY mall-admin-1.0.0-SNAPSHOT.jar /app/app.jar
 ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-jar", "/app/app.jar", "--spring.profiles.active=dev"]
 
 EXPOSE 8888
+
+```
+
+### 阉割版半自动持续集成
+```$xslt
+FROM openjdk:8-jdk-alpine
+ADD ./mall-admin/target/mall-admin-1.0.0-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 
 ```
